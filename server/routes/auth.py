@@ -10,6 +10,7 @@ from models.user import User
 from pydantic_schemas.user_create import UserCreate
 from pydantic_schemas.user_login import UserLogin
 import jwt
+
 router = APIRouter()
 
 @router.post('/signup', status_code=201)
