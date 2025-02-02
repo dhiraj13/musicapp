@@ -1,3 +1,4 @@
 class ServerConstant {
-  static const String serverURL = 'https://cb59-2400-1a00-b030-b34a-1c98-34a7-5bb6-6c10.ngrok-free.app';
+  static const String serverURL =
+      'https://3a2f-2400-1a00-b030-b34a-2df1-f565-2742-6298.ngrok-free.app';
 }
