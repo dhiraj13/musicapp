@@ -46,6 +46,7 @@ dependencies:
   just_audio: ^0.9.45
   hive: ^2.2.3
   hive_flutter: ^1.1.0
+  just_audio_background: ^0.0.1-beta.15
 
 dev_dependencies:
   flutter_test:
