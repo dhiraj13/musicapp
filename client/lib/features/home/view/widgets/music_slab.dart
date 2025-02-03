@@ -25,7 +25,8 @@ class MusicSlab extends ConsumerWidget {
             return const MusicPlayer();
           },
           transitionsBuilder: (context, animation, secondaryAnimation, child) {
-            final tween = Tween(begin: const Offset(0, 1), end: Offset.zero).chain(
+            final tween =
+                Tween(begin: const Offset(0, 1), end: Offset.zero).chain(
               CurveTween(
                 curve: Curves.easeIn,
               ),
@@ -42,7 +43,8 @@ class MusicSlab extends ConsumerWidget {
       },
       child: Stack(
         children: [
-          Container(
+          AnimatedContainer(
+            duration: const Duration(milliseconds: 500),
             height: 66,
             width: MediaQuery.of(context).size.width - 16,
             decoration: BoxDecoration(
@@ -126,7 +128,7 @@ class MusicSlab extends ConsumerWidget {
                   sliderValue =
                       position.inMilliseconds / duration.inMilliseconds;
                 }
-                
+
                 return Positioned(
                   bottom: 0,
                   left: 8,

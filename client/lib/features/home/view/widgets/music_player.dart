@@ -151,7 +151,7 @@ class MusicPlayer extends ConsumerWidget {
                             Row(
                               children: [
                                 Text(
-                                  '${position?.inMinutes}:${(position?.inSeconds ?? 0) < 10 ? '0${position?.inSeconds}' : position?.inSeconds}',
+                                  '${position?.inMinutes}:${(position?.inSeconds ?? 0) % 60 < 10 ? '0${(position?.inSeconds ?? 0) % 60}' : (position?.inSeconds ?? 0) % 60}',
                                   style: const TextStyle(
                                     color: Pallete.subtitleText,
                                     fontSize: 13,
